@@ -3,11 +3,12 @@
 
 
 enter_hours = input('Enter Hours: ')
-enter_rate = input('Enteder Rate: ')
+enter_rate = input('Enter Rate: ')
 try:
-    float(enter_hours)
+    float(enter_hours), float(enter_rate)
 except:
     enter_hours = -1
+    enter_rate = -1
 
 if float(enter_hours) > 0:
     pay = float(enter_hours) * float(enter_rate)
