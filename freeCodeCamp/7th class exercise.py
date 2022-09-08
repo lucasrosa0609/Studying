@@ -3,8 +3,6 @@ def computepay(hours, rate):
     rate = float(rate)
     payment = hours * rate
     if hours > 40:
-        float(hours)
-        float(rate)
         print('Overtime, all hours above 40 are being multiplied by 1.5')
         payment = 40 * rate
         excessive_hours = hours - 40
@@ -30,4 +28,3 @@ else:
     print('Not a number')
 
 print('All done')
-
